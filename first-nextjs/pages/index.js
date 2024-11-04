@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
-import Counter from "../Components/Counter";
+import Counter from "../public/Components/Counter";
 
 export default function Home() {
   return (
