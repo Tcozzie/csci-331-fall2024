@@ -1,6 +1,7 @@
 import styles from "./page.module.css";
 import Counter from "@/app/Counter";
-import Link from "next/link";
+import ParagraphComponent from "@/app/ParagraphComponent";
+import StoreComponent from "@/app/StoreComponent";
 
 export default function Home() {
 
@@ -22,26 +23,9 @@ export default function Home() {
 
             </div>
             <hr/>
-
-            <div className={styles.content}>
-                <p>
-                    I want to do a social HTMX TODO app that will allow for user authentication with AWS Cognito. I
-                    also want to be able
-                    to add friends on the app and see each other's public todos. I would like to showcase this in
-                    how a user would sign up,
-                    make some todos, and then find a friend, add them. Then see each other's todos. This would be a
-                    live demo.</p>
-                <div>
-                    <a href="https://github.com/Tcozzie/csci-331-fall2024" className={styles.button}>Github Repo</a>
-                </div>
-            </div>
+            <ParagraphComponent/>
             <hr/>
-            <Link href="/store">
-                <button className={styles.button} style={{ color: "black" }}>
-                    Store
-                </button>
-            </Link>
-
+            <StoreComponent/>
         </main>
     </div>);
 }
