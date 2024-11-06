@@ -109,32 +109,31 @@ a.secondary {
 }
 
 .content {
-  width: 600px; /* Fixed width */
-  margin: 20px auto; /* Center the content horizontally */
-  padding: 20px; /* Padding inside the content area */
-  background-color: #252020; /* Gray background */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
-  font-family: Arial, sans-serif; /* Font style */
-  line-height: 1.6; /* Improve readability */
+  width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #252020;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
 }
 
 .button {
-  display: inline-block; /* Allows padding and margin to take effect */
-  padding: 10px 20px; /* Adjust button size */
-  background-color: lightblue; /* Button background color */
-  color: white; /* Text color */
-  text-decoration: none; /* Remove underline */
-  border-radius: 5px; /* Rounded corners */
-  transition: background-color 0.3s; /* Smooth transition for hover effect */
-  margin-top: 10px; /* Space above the button */
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: lightblue;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  margin-top: 10px;
 }
 
 .button:hover {
-  background-color: deepskyblue; /* Change color on hover */
+  background-color: deepskyblue;
 }
 
-/* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   a.primary:hover {
     background: var(--button-primary-hover);
